@@ -1,12 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var csrf = require('csrf');
-var tokens = new csrf();
-const bcrypt = require('bcrypt');
 import LibAuth from "../libs/LibAuth"
-import LibCsrf from "../libs/LibCsrf"
-// const client = redis.createClient();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

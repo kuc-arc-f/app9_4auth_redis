@@ -70,6 +70,8 @@ router.get('/test1', function(req, res, next) {
         var v = LibAuth.valid_user(req);
         if(v){
             res.send("User, Login");
+            var user = LibAuth.get_user(req)
+            console.log( user );    
         }else{
             res.redirect('/login')
         }

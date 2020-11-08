@@ -37,8 +37,9 @@ app.use(session({
   //未初期化状態のセッションを保存しない
   saveUninitialized: false,
   cookie: {
-    //生存期間は3日
-    maxAge: 3 * 24 * 60 * 1000,
+    //生存期間
+//    maxAge: 3 * 24 * 60 * 1000,
+    maxAge: 365 * 24 * 60 * 1000,
     //httpsを使用しない
     secure: false
   }
